@@ -9,6 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var labelTop: UILabel!
+    
+    
+    @IBOutlet weak var textLeft: UITextField!
+    
+    @IBOutlet weak var textRight: UITextField!
+    
+    
+    @IBAction func buttonTap(_ sender: UIButton) {
+        labelTop.text = "Changed Display Text"
+        print(labelTop)
+        print(textLeft.text!)
+        print(textRight.text!)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
