@@ -12,15 +12,18 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var labelTop: UILabel!
     
-    
     @IBOutlet weak var textLeft: UITextField!
     
     @IBOutlet weak var textRight: UITextField!
-    
-    
+
     @IBAction func buttonTap(_ sender: UIButton) {
-        labelTop.text = "Answer is: \(Double(textLeft.text!)! + Double(textRight.text!)!)"
+        let addition = false
         
+        if addition {
+            labelTop.text = "Answer is: \(Double(textLeft.text!)! + Double(textRight.text!)!)"
+        } else {
+            labelTop.text = "Answer is: \(Double(textLeft.text!)! - Double(textRight.text!)!)"
+        }
     }
 
     override func viewDidLoad() {
@@ -33,6 +36,4 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
 }
-
