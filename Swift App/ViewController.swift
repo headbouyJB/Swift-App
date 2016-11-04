@@ -19,10 +19,8 @@ class ViewController: UIViewController {
     
     
     @IBAction func buttonTap(_ sender: UIButton) {
-        labelTop.text = "Changed Display Text"
-        print(labelTop)
-        print(textLeft.text!)
-        print(textRight.text!)
+        labelTop.text = "Answer is: \(Double(textLeft.text!)! + Double(textRight.text!)!)"
+        
     }
 
     override func viewDidLoad() {
